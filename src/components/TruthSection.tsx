@@ -102,7 +102,7 @@ export default function TruthSection() {
           <div className="mt-10 text-center">
             <button
               onClick={initiateCheckout}
-              className="group/btn relative px-12 py-6 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-slate-900 text-xl sm:text-2xl font-bold rounded-xl hover:from-amber-400 hover:to-amber-500 transform hover:scale-105 transition-all duration-300 shadow-2xl shadow-amber-500/50 hover:shadow-amber-400/70"
+              className="group/btn relative z-50 px-12 py-6 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-slate-900 text-xl sm:text-2xl font-bold rounded-xl hover:from-amber-400 hover:to-amber-500 active:scale-95 transform hover:scale-105 transition-all duration-300 shadow-2xl shadow-amber-500/50 hover:shadow-amber-400/70 touch-manipulation cursor-pointer"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 ЗАПОЧНИ ДА ИНВЕСТИРАШ ПРАВИЛНО!

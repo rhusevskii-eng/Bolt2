@@ -112,7 +112,7 @@ export default function Hero() {
 
             <button
               onClick={handleCheckoutClick}
-              className="group relative px-12 sm:px-16 py-6 sm:py-8 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-slate-900 text-xl sm:text-3xl font-black rounded-2xl hover:from-amber-400 hover:via-amber-300 hover:to-amber-500 transform hover:scale-110 transition-all duration-300 shadow-2xl shadow-amber-500/60 hover:shadow-amber-400/80 border-4 border-amber-300/50"
+              className="group relative z-50 px-12 sm:px-16 py-6 sm:py-8 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-slate-900 text-xl sm:text-3xl font-black rounded-2xl hover:from-amber-400 hover:via-amber-300 hover:to-amber-500 active:scale-95 transform hover:scale-110 transition-all duration-300 shadow-2xl shadow-amber-500/60 hover:shadow-amber-400/80 border-4 border-amber-300/50 touch-manipulation cursor-pointer"
             >
               <span className="relative z-10 flex items-center gap-4 drop-shadow-lg">
                 ЗАПИШИ СЕ СЕГА!

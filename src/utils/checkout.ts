@@ -30,8 +30,8 @@ export async function initiateCheckout() {
       throw new Error('No checkout URL received');
     }
 
-    // Open checkout in a new window
-    window.open(data.url, '_blank', 'noopener,noreferrer');
+    // Redirect to checkout
+    window.location.href = data.url;
 
   } catch (error) {
     console.error('Checkout error:', error);
