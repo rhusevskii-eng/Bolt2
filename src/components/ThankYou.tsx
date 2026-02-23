@@ -25,7 +25,7 @@ export default function ThankYou() {
   }, []);
 
   const handleViberClick = () => {
-    window.open('https://invite.viber.com/?g2=AQBDgnWTYAtRTlYayRucgZRt1%2FgCLovD8h5%2FN1d1EYEN0Fxrrp5K%2FcJ7kNkm0n%2BV', '_blank');
+    window.location.href = 'https://invite.viber.com/?g2=AQBDgnWTYAtRTlYayRucgZRt1%2FgCLovD8h5%2FN1d1EYEN0Fxrrp5K%2FcJ7kNkm0n%2BV';
   };
 
   return (
