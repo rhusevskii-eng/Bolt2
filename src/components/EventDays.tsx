@@ -3,7 +3,7 @@ import { MapPin, TrendingUp, Target, Palmtree } from 'lucide-react';
 const days = [
   {
     day: 'ДЕН 1',
-    date: '13 Март',
+    date: '13 Март - Петък',
     time: '19:00 часа',
     icon: MapPin,
     title: 'ИНВЕСТИЦИОННИ СТРАТЕГИИ, ЛОКАЦИИ И РЕАЛНИ ПРИМЕРИ',
@@ -16,7 +16,7 @@ const days = [
   },
   {
     day: 'ДЕН 2',
-    date: '14 Март',
+    date: '14 Март - Събота',
     time: '19:00 часа',
     icon: TrendingUp,
     title: 'КАК СЕ АНАЛИЗИРА ИМОТ? ДОБЪР И ЛОШ',
@@ -29,7 +29,7 @@ const days = [
   },
   {
     day: 'ДЕН 3',
-    date: '15 Март',
+    date: '15 Март - Неделя',
     time: '19:00 часа',
     icon: Target,
     title: 'СИСТЕМАТА, КОЯТО РАБОТИ',
@@ -42,7 +42,7 @@ const days = [
   },
   {
     day: 'ДЕН 4',
-    date: '16 Март',
+    date: '16 Март - Понеделник',
     time: '19:00 часа',
     icon: Palmtree,
     title: 'ДУБАЙ - МЕЖДУНАРОДНИ ВЪЗМОЖНОСТИ',
