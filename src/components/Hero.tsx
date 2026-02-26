@@ -72,7 +72,7 @@ export default function Hero() {
               <div className="p-2.5 bg-gradient-to-br from-amber-500/30 to-amber-600/30 rounded-lg group-hover:from-amber-400/40 group-hover:to-amber-500/40 transition-all">
                 <Clock className="w-6 h-6 text-amber-400 group-hover:text-amber-300" />
               </div>
-              <span className="text-lg sm:text-xl font-bold text-white">Четвъртък, Петък, Събота, Неделя</span>
+              <span className="text-lg sm:text-xl font-bold text-white">Петък, Събота, Неделя и Понеделник</span>
             </div>
           </div>
 
