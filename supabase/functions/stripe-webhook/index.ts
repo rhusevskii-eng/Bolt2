@@ -126,6 +126,7 @@ async function sendMetaConversionEvent(
       {
         event_name: "Purchase",
         event_time: Math.floor(Date.now() / 1000),
+        event_id: `order_${orderDetails.orderId}`,
         action_source: "website",
         event_source_url: "https://your-domain.com/thank-you",
         user_data: {
