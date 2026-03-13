@@ -1,4 +1,61 @@
 Order ID,Customer Email,Customer Name,Phone Number,Amount (EUR),Currency,Status,Purchase Date,Added to Brevo
+4814ce75-9910-4749-a3b2-e2ad67aaf7cf,velin.bikov@mail.bg,Velin Bikov,+358888343050,37,eur,completed,2026-03-13 13:01:22,false
+523d87f4-6bb8-499a-bf09-e64c35576aa1,anislav1206@qbv.bg,Anislav Yakov,088 852 1442,37,eur,completed,2026-03-13 12:51:54,false
+63e851cf-7412-4773-845e-b93488842c79,valentin.stoyanov@vikingtechlabs.com,Valentin Stoyanov,+359885421425,37,eur,completed,2026-03-13 11:47:33,false
+6088deb8-fa88-4eef-a81a-fea45722d926,dragopetkov2619@icloud.com,Dragomir Hristov,,37,eur,completed,2026-03-13 11:42:47,false
+55200ccf-4a86-41b6-bdac-1b8673791c29,rossenvibes@gmail.com,Rosen Petrov,359877668872,37,eur,completed,2026-03-13 10:44:49,false
+8dddc9ce-f2f4-4ded-b1fd-cb572ea6d6eb,ivan.sevov@abv.bg,Ivan Sevov,088 513 3400,37,eur,completed,2026-03-13 10:18:24,false
+c7982e08-758f-4e8a-9fba-455707037be7,kirecek@gmail.com,ГЕОРГИ ВАСКОВ МИХАЙЛОВ,+359877115101,37,eur,completed,2026-03-13 09:29:58,false
+9434e07f-9b00-41a3-aa04-2d16dc7e1d85,smokinia@gmail.com,Стела Георгиева,+359886525026,37,eur,completed,2026-03-13 07:49:10,false
+49245bf8-f478-455a-ba70-0a1f6febd223,bobo91280@gmail.com,Bozhidar Valkov,3590877071321,37,eur,completed,2026-03-12 23:37:28,false
+afd81a7e-3d82-4a6d-956e-22eaf2ab4e71,vaskonikolov@icloud.com,Vasil  Nikolov,+359878780088,37,eur,completed,2026-03-12 22:11:33,false
+36bc0ae7-f4a4-4e24-8f45-aa56e19b57ec,jemalja.apps@gmail.com,Dzhemal Ahmedov,+359895123262,37,eur,completed,2026-03-12 21:43:49,false
+635aac22-e49c-4df8-b880-989e57e8099a,tomi4_@abv.bg,Тома Христов Томов,+359886850203,37,eur,completed,2026-03-12 21:31:22,false
+46e66d63-12af-4276-b586-777ffc6142f0,ivanova.elena@mail.bg,Elena Ivanova,+359887259630,37,eur,completed,2026-03-12 15:10:13,false
+03daf086-3f74-4da1-86a4-58c58bd0ebf5,stanimir.lazarov@gmail.com,Stanimir  Lazarov,+359886448382,37,eur,completed,2026-03-12 13:43:31,false
+9585440d-a7a7-43ec-b150-86627fe0e6e1,alex_flute_bg@abv.bg,Aleksandar Evstatiev,+359876899200,37,eur,completed,2026-03-12 10:41:53,false
+db2091e2-f353-4058-99ae-9e9f9b189bb8,s.georgiev.post@gmail.com,stefan georgiev,088 731 4982,37,eur,completed,2026-03-11 21:45:15,false
+8fb26007-d24d-4a40-98a2-f0b3f0130bfb,eftimovski.pavel525@yahoo.com,Pavel Eftimovski,+359 89 497 4833,37,eur,completed,2026-03-11 19:43:06,false
+8ab83339-3288-450f-b623-643deaf04bb3,e_iivanova@hotmail.com,Евелина Попова,088 333 5578,37,eur,completed,2026-03-11 16:01:56,false
+60ebd621-450d-4db7-bed2-ef7d0ffdc376,mmdunevv@gmail.com,Mariya Dunev,359885070020,37,eur,completed,2026-03-11 14:55:10,false
+e2b8055e-265b-4109-8db2-142b467db06d,danieldelchunkov@gmail.com,Daniel Delchunkov,+359888636404,37,eur,completed,2026-03-11 09:37:45,false
+5f3a4af8-dcf9-4316-aa6c-641dbc2b5ba4,yana.yankova@yahoo.com,Yana Yankova,+359888619609,37,eur,completed,2026-03-11 07:51:18,false
+05dea86a-b905-4464-b2a3-51c8b68aaf53,andreypetkov2015@gmail.com,Андрей Петков,+359896590545,37,eur,completed,2026-03-11 07:06:02,false
+0ac8dae8-7526-46e1-94e7-070827be9e5e,lillyanfoteva@gmail.com,Lilian Foteva,359898447437,37,eur,completed,2026-03-10 14:27:38,false
+05f6a033-e9e9-438f-ad28-768efc5ea49b,alfanetbg@gmail.com,Daniel Veselinov Yordanov,+359888392292,37,eur,completed,2026-03-10 13:19:01,false
+fc9b7e42-ca95-4220-875f-4d53db2c696f,todormangarov@abv.bg,Todor Mangarov,+359878686780,37,eur,completed,2026-03-10 09:15:15,false
+7a66d0a8-48db-4cf2-a11f-1e9537977b34,hristo.hristovdr@icloud.com,Dr Hristov,+359876679786,37,eur,completed,2026-03-10 08:47:20,false
+65c68b9c-fc8a-4437-ab85-f799526e1996,veronikamihaylova@yahoo.com,Veronika Mihaylova,00359877026679,37,eur,completed,2026-03-10 06:33:50,false
+2ecdff10-b253-4b0b-8ffb-e1312b457f24,kuriozen@gmail.com,Bozhidar Krastev,+12068326414,37,eur,completed,2026-03-09 20:18:12,false
+b8f13718-328b-48f2-9969-15b1c8d80b19,silvia.stoilova@gmail.com,Silvia Nikolova,0889241417,37,eur,completed,2026-03-09 14:01:25,false
+e746a838-b44d-4739-87cb-7233debcdc9a,yordan.kanov@gmail.com,Yordan Kanov,+359898538935,37,eur,completed,2026-03-08 21:02:47,false
+5b9d8f05-a418-40c2-8b92-167035e8377d,v.ralchev@inaessentials.com,InaEssentials LTD,+359884677807,37,eur,completed,2026-03-08 20:36:54,false
+a5e1cd96-e838-4492-a4a7-80826786173c,borislav.borisov32@gmail.com,Borislav Borisov,359889608688,37,eur,completed,2026-03-08 15:13:44,false
+154045a0-385f-4366-a346-4358611b5c56,malinnn@abv.bg,Янка Стамболова,+359884889033,37,eur,completed,2026-03-08 13:40:34,false
+d563c464-06cb-4e7e-9042-8e3955ab6749,eli_tsvetkova@yahoo.de,Еlena Tsvetkova,+41786308481,37,eur,completed,2026-03-08 11:00:17,false
+83261a31-e982-4036-be18-a0d0264d0bd0,g.b.cooper35@icloud.com,Julia Sindrakova,+359889808480,37,eur,completed,2026-03-07 23:32:07,false
+ece2ef9f-b8f8-4904-bb57-3e912022a604,daniela.radeva95@gmail.com,Daniela Dimova,359897915248,37,eur,completed,2026-03-07 09:23:21,false
+e2ea7c0c-8144-41ca-879a-cef498b9c601,boriana.dantcheva191965@gmail.com,Visa,+359882513088,37,eur,completed,2026-03-07 08:55:46,false
+046a4a51-3939-41e9-8b35-43dc6230f164,i_asenova@yahoo.com,Iskra Avdzhieva,00 359 88 952 7213,37,eur,completed,2026-03-07 08:40:37,false
+5b54287e-a818-49a2-a170-9f879ce4208b,maria_bal4eva@abv.bg,Maria Yordanova ,0176 76644371,37,eur,completed,2026-03-07 07:10:28,false
+e2752bd9-82c9-409f-a185-2f35bcff0657,hrisimir.ivanov@abv.bg,Hrisimir Ivaylov Ivanov,+359883368742,37,eur,completed,2026-03-06 14:09:06,false
+49cc5da1-e0a4-4b20-905f-7c6cd4467cdb,jivomir_iliev@yahoo.de,Jivomir Iliev,+359898528280,37,eur,completed,2026-03-06 07:48:42,false
+0c389275-7e85-455d-a418-49b2165e4022,d.p.varadinov@gmail.com,Dimitar Varadinov,359889955509,37,eur,completed,2026-03-06 04:05:04,false
+cc992bdd-ad4f-40fa-87a7-c3748dee2f2c,dmantc@abv.bg,VESELA MANCHEVA,+359893475241,37,eur,completed,2026-03-05 18:11:11,false
+96cdae4e-4fcf-44a8-a28a-69064e5d75f5,bonomi1991@gmail.com,Мауро Бономи,+359890102780,37,eur,completed,2026-03-05 13:06:11,false
+7e9759bb-d6b7-4daa-8e23-2780294ab956,simeonlgeorgiev@gmail.com,Simeon Georgiev,+359887888745,37,eur,completed,2026-03-05 11:43:47,false
+3a26d800-03dd-4bd2-b54a-6668776cac01,liliya.nedeva.87@gmail.com,liliya nedeva,+359899690909,37,eur,completed,2026-03-05 07:38:40,false
+f4c8de10-5950-4ab7-b95f-26b61df7f9cd,immomartex@gmail.com,Sonya Peychev,+4917666831365,37,eur,completed,2026-03-04 15:47:45,false
+a9de4959-b1d3-4bae-9c05-765851fe63c5,stefani.nikolovaa@gmail.com,Stefani Nikolova,+359895706205,37,eur,completed,2026-03-03 21:49:25,false
+687d3ca8-6217-47cd-b66d-85847f085df0,yyordanov1010@gmail.com,Yordan Yordanov,+359886611511,37,eur,completed,2026-03-03 19:29:55,false
+8d14960f-f499-4575-95f1-a4c6975145cb,kr.tsonev@abv.bg,Krasimir Tsonev,+359886818402,37,eur,completed,2026-03-03 17:47:13,false
+44f71315-aeed-4e10-861e-95d6f77104e2,kirmil97@gmail.com,Kiril Yavorov Milanov,+359895677083,37,eur,completed,2026-03-03 15:25:07,false
+b7d5fa5c-74ad-4214-8d7f-ee81685beade,sash.simov@gmail.com,Aleksandar Simov,+359882959673,37,eur,completed,2026-03-03 13:30:49,false
+3aae5d03-afd9-4c19-9996-903a563301ea,mimislavova91@abv.bg,Мария Любомирова Славова,+359893779600,37,eur,completed,2026-03-02 19:31:55,false
+8557320e-a326-40af-93e1-a9a8395ab60c,ira8niki@gmail.com,Irina Ovsyannikova,+359899071111,37,eur,completed,2026-03-02 09:01:43,false
+99fcd55a-9556-4a9d-b725-90508191873e,petyaivanova14@gmail.com,Petya Terziyska,+393280987525,37,eur,completed,2026-03-02 08:35:15,false
+571e9050-3b84-45e3-8f87-afd7237852b9,alexandar.lex96@gmail.com,Александър Димитров,+3590878540794,37,eur,completed,2026-03-02 05:42:22,false
+79010e36-c10c-475e-bb2e-60aa52bc72bd,ivan.st.mollov@gmail.com,Ivan Mollov,+359886573715,37,eur,completed,2026-03-02 02:15:58,false
 b576c0c0-286c-4acb-8eb5-cd7e13d53b43,daniel.sv.ivanov@gmail.com,Gergana Sarov,+359897970959,37,eur,completed,2026-03-01 18:59:03,false
 c48621d6-6ad2-4eaa-916a-ad125dc4b366,Kotov6281@gmail.com,Anton Kotov,359897014044,37,eur,completed,2026-03-01 18:56:09,false
 70e37dc3-1c00-4962-a941-39ac18fd358e,iliev_h@yahoo.com,Hristo Iliev,+359878414464,37,eur,completed,2026-03-01 17:17:00,false
