@@ -46,7 +46,13 @@ Deno.serve(async (req: Request) => {
     if (!response.ok) {
       const errorData = await response.text();
       console.error("Stripe API Error:", errorData);
-      throw new Error(`Stripe API error: ${response.status}`);
+      return new Response(
+        JSON.stringify({ error: `Stripe API error: ${response.status}`, details: errorData }),
+        {
+          status: 500,
+          headers: { ...corsHeaders, "Content-Type": "application/json" },
+        }
+      );
     }
 
     const session = await response.json();
