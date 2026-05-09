@@ -16,9 +16,9 @@ Deno.serve(async (req: Request) => {
 
   try {
     const stripeSecretKey = Deno.env.get("STRIPE_SECRET_KEY");
-    const stripePriceId = Deno.env.get("STRIPE_PRICE_ID");
+    const stripePriceId = Deno.env.get("STRIPE_PRICE_ID") || "price_1TV80GArg7PEDJEmiL4rFA5r";
 
-    if (!stripeSecretKey || !stripePriceId) {
+    if (!stripeSecretKey) {
       throw new Error("Missing required environment variables");
     }
 
