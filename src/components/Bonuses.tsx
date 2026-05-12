@@ -1,4 +1,4 @@
-import { Gift, MapPin, Globe, TrendingUp, Building } from 'lucide-react';
+import { Gift, MapPin, Globe } from 'lucide-react';
 import { initiateCheckout } from '../utils/checkout';
 
 const bonuses = [
@@ -14,18 +14,6 @@ const bonuses = [
     value: '254 евро',
     description: 'Цялата система за инвестиции в чужбина - как избрах Германия, Швейцария и Дубай, какво проверявам преди нов пазар, как управлявам от разстояние, как избягвам капаните за чуждестранни инвеститори. Реални числа от моите имоти - доходности, разходи, данъци. Пътна карта за излизане извън България.'
   },
-  {
-    icon: TrendingUp,
-    title: 'Какво се случва след еврото',
-    value: '101 евро',
-    description: 'Какво се случи в други източноевропейски страни при въвеждане на еврото, какви възможности се появиха, кои инвеститори спечелиха. Конкретна стратегия как да се позиционираш СЕГА - кои имоти ще се възползват най-много, кои райони ще видят ръст, какво да правиш в следващите 12-24 месеца.'
-  },
-  {
-    icon: Building,
-    title: '4-ти ден - Навлизаме напълно в Дубай',
-    value: '203 евро',
-    description: 'Специален бонус ден, посветен изцяло на пазара в Дубай. Как работи имотният пазар там, какви са специфичните правила и регулации, как се избират райони, какви са данъците и разходите, и как да направиш първата си инвестиция в един от най-динамичните имотни пазари в света.'
-  }
 ];
 
 export default function Bonuses() {
@@ -104,7 +92,7 @@ export default function Bonuses() {
           <div className="relative z-10 space-y-8">
             <div>
               <p className="text-slate-400 text-xl mb-2">ОБЩА СТОЙНОСТ:</p>
-              <p className="text-4xl sm:text-5xl font-bold text-slate-500 line-through mb-4">708 евро</p>
+              <p className="text-4xl sm:text-5xl font-bold text-slate-500 line-through mb-4">404 евро</p>
             </div>
 
             <div className="relative inline-block">
