@@ -53,6 +53,10 @@ export default function WhyTrustMe() {
                 <span className="text-amber-400 font-bold">Имам имоти в четири държави</span> – Германия, Швейцария, България, Дубай – и знам как се управляват активи на различни пазари.
               </p>
 
+              <p className="text-slate-200 leading-relaxed text-lg">
+                <span className="text-amber-400 font-bold">Организатор на едно от най-големите събития за инвеститори в имоти</span> – <span className="text-amber-400 font-semibold">"Квадратни Метри"</span>.
+              </p>
+
               <div className="pt-6 mt-6 border-t border-slate-700">
                 <p className="text-slate-100 leading-relaxed text-xl font-bold">
                   Не ти продавам теория от книги – давам ти система, изградена от реален опит, реални сделки и реални грешки, които съм платил, <span className="text-amber-400">за да не ги плащаш ти!</span>
