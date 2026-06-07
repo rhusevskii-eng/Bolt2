@@ -54,7 +54,7 @@ export default function WhyTrustMe() {
               </p>
 
               <p className="text-slate-200 leading-relaxed text-lg">
-                <span className="text-amber-400 font-bold">Организатор на едно от най-големите събития за инвеститори в имоти</span> – <span className="text-amber-400 font-semibold">"Квадратни Метри"</span>.
+                <span className="text-amber-400 font-bold">Организатор на едно от най-големите събития за инвеститори в имоти с над 500 души в Гранд Хотел Милениум</span> – <span className="text-amber-400 font-semibold">"Квадратни Метри"</span>.
               </p>
 
               <div className="pt-6 mt-6 border-t border-slate-700">
