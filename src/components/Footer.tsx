@@ -14,7 +14,7 @@ export default function Footer() {
             <span className="relative z-10">ЗАПИШИ СЕ СЕГА - 37€</span>
             <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 rounded-lg blur opacity-50 group-hover:opacity-75 transition-opacity" />
           </button>
-          <p className="text-slate-400 mt-4">Събитието започва на 14 Май</p>
+          <p className="text-slate-400 mt-4">Събитието започва на 25 Юни</p>
         </div>
 
         <div className="flex items-center justify-center gap-3 mb-6">

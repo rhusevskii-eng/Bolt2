@@ -95,7 +95,7 @@ export default function TruthSection() {
             </p>
 
             <p className="text-amber-400 font-bold text-2xl">
-              На 14, 15, 16 и 17 Май ще ти покажа истинската разлика.
+              На 25, 26, 27 и 28 Юни ще ти покажа истинската разлика.
             </p>
           </div>
 
