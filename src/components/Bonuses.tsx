@@ -17,7 +17,7 @@ const bonuses = [
   {
     icon: Video,
     title: 'Пълен 6-часов запис на живото събитие "Квадратни Метри 2026" в "Гранд Хотел Милениум"',
-    value: '197 евро',
+    value: '147 евро',
     description: 'Получаваш пълен достъп до целия запис на едно от най-големите събития за инвеститори в имоти в България. 6 часа концентрирано съдържание, презентации и дискусии от живото събитие в Гранд Хотел Милениум - материал, който можеш да гледаш многократно и да прилагаш на собственото си темпо.'
   },
 ];
@@ -98,7 +98,7 @@ export default function Bonuses() {
           <div className="relative z-10 space-y-8">
             <div>
               <p className="text-slate-400 text-xl mb-2">ОБЩА СТОЙНОСТ:</p>
-              <p className="text-4xl sm:text-5xl font-bold text-slate-500 line-through mb-4">601 евро</p>
+              <p className="text-4xl sm:text-5xl font-bold text-slate-500 line-through mb-4">551 евро</p>
             </div>
 
             <div className="relative inline-block">
