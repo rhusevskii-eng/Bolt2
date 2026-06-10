@@ -1,4 +1,4 @@
-import { Gift, MapPin, Globe } from 'lucide-react';
+import { Gift, MapPin, Globe, Video } from 'lucide-react';
 import { initiateCheckout } from '../utils/checkout';
 
 const bonuses = [
@@ -13,6 +13,12 @@ const bonuses = [
     title: 'Как да инвестираш извън България и да създадеш милионно портфолио',
     value: '254 евро',
     description: 'Цялата система за инвестиции в чужбина - как избрах Германия, Швейцария и Дубай, какво проверявам преди нов пазар, как управлявам от разстояние, как избягвам капаните за чуждестранни инвеститори. Реални числа от моите имоти - доходности, разходи, данъци. Пътна карта за излизане извън България.'
+  },
+  {
+    icon: Video,
+    title: 'Пълен 6-часов запис на живото събитие "Квадратни Метри 2026" в "Гранд Хотел Милениум"',
+    value: '197 евро',
+    description: 'Получаваш пълен достъп до целия запис на едно от най-големите събития за инвеститори в имоти в България. 6 часа концентрирано съдържание, презентации и дискусии от живото събитие в Гранд Хотел Милениум - материал, който можеш да гледаш многократно и да прилагаш на собственото си темпо.'
   },
 ];
 
@@ -92,7 +98,7 @@ export default function Bonuses() {
           <div className="relative z-10 space-y-8">
             <div>
               <p className="text-slate-400 text-xl mb-2">ОБЩА СТОЙНОСТ:</p>
-              <p className="text-4xl sm:text-5xl font-bold text-slate-500 line-through mb-4">404 евро</p>
+              <p className="text-4xl sm:text-5xl font-bold text-slate-500 line-through mb-4">601 евро</p>
             </div>
 
             <div className="relative inline-block">
