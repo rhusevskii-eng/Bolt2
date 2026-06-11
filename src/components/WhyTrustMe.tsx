@@ -15,8 +15,7 @@ export default function WhyTrustMe() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-14 sm:mb-16">
-          <span className="section-label mb-4">Доверие</span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mt-4">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight">
             <span className="text-white">Защо да ми </span>
             <span className="text-amber-400">вярваш?</span>
           </h2>
@@ -29,7 +28,7 @@ export default function WhyTrustMe() {
               <div className="absolute -inset-3 rounded-3xl blur-2xl" style={{ background: 'rgba(245,158,11,0.12)' }} />
               <div className="relative rounded-2xl overflow-hidden border shadow-2xl" style={{ borderColor: 'rgba(245,158,11,0.25)', boxShadow: '0 25px 50px rgba(245,158,11,0.15)' }}>
                 <img
-                  src="/IMG_0124%20copy.jpg"
+                  src="/IMG_0304.jpg"
                   alt="Иво Димовски"
                   className="w-full h-auto block"
                   loading="eager"

@@ -46,8 +46,7 @@ export default function Testimonials() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="mb-14 sm:mb-16">
-          <span className="section-label mb-4">Социално доказателство</span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mt-4">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
             Какво казват <span className="text-amber-400">хората</span>
           </h2>
           <p className="text-blue-300/60 text-lg mt-3">от минали обучения</p>
@@ -57,11 +56,11 @@ export default function Testimonials() {
         <div className="grid lg:grid-cols-2 gap-8 items-center mb-16">
           <div className="relative">
             <div className="absolute -inset-3 rounded-3xl blur-2xl" style={{ background: 'rgba(245,158,11,0.08)' }} />
-            <div className="relative rounded-2xl overflow-hidden border shadow-2xl aspect-[4/3]" style={{ borderColor: 'rgba(245,158,11,0.20)' }}>
+            <div className="relative rounded-2xl overflow-hidden border shadow-2xl" style={{ borderColor: 'rgba(245,158,11,0.20)' }}>
               <img
                 src={testimonials[current].image}
                 alt={testimonials[current].name}
-                className="w-full h-full object-cover object-top transition-opacity duration-300"
+                className="w-full h-auto block transition-opacity duration-300"
               />
               <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(5,18,31,0.65) 0%, transparent 50%)' }} />
             </div>
