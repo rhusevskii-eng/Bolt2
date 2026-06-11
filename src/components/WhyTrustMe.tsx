@@ -29,7 +29,7 @@ export default function WhyTrustMe() {
               <div className="absolute -inset-3 rounded-3xl blur-2xl" style={{ background: 'rgba(245,158,11,0.12)' }} />
               <div className="relative rounded-2xl overflow-hidden border shadow-2xl" style={{ borderColor: 'rgba(245,158,11,0.25)', boxShadow: '0 25px 50px rgba(245,158,11,0.15)' }}>
                 <img
-                  src="/DSC05853.jpg"
+                  src="/IMG_0124%20copy.jpg"
                   alt="Иво Димовски"
                   className="w-full h-auto block"
                   loading="eager"
