@@ -1,5 +1,6 @@
-import { Building2, Shield } from 'lucide-react';
+import { Building2 } from 'lucide-react';
 import { initiateCheckout } from '../utils/checkout';
+import GuaranteeBadge from './GuaranteeBadge';
 
 export default function Footer() {
   return (
@@ -26,11 +27,8 @@ export default function Footer() {
             ЗАПИШИ СЕ СЕГА — 37€ →
           </button>
 
-          <div className="mt-10 inline-flex items-center gap-3 px-6 py-4 rounded-2xl border" style={{ background: 'rgba(5,40,30,0.50)', borderColor: 'rgba(52,211,153,0.20)' }}>
-            <Shield className="w-6 h-6 text-emerald-400 flex-shrink-0" />
-            <p className="text-blue-50/85 text-sm font-medium text-left">
-              <span className="text-emerald-400 font-bold">Гаранция за връщане на парите</span> — участваш и в 4-те дни, не доволен → връщаме без въпроси.
-            </p>
+          <div className="mt-6 flex justify-center">
+            <GuaranteeBadge />
           </div>
         </div>
       </section>

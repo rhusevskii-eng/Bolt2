@@ -1,4 +1,5 @@
 import { initiateCheckout } from '../utils/checkout';
+import GuaranteeBadge from './GuaranteeBadge';
 
 export default function TruthSection() {
   return (
@@ -80,6 +81,9 @@ export default function TruthSection() {
             ЗАПОЧНИ ДА ИНВЕСТИРАШ ПРАВИЛНО →
           </button>
           <p className="mt-4" style={{ color: 'rgba(148,163,184,0.60)' }}>Само за <span className="text-amber-400 font-bold">37€</span></p>
+          <div className="mt-4 flex justify-center">
+            <GuaranteeBadge />
+          </div>
         </div>
       </div>
     </section>

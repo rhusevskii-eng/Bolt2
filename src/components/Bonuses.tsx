@@ -1,5 +1,6 @@
 import { Gift, MapPin, Globe, Video, Hammer } from 'lucide-react';
 import { initiateCheckout } from '../utils/checkout';
+import GuaranteeBadge from './GuaranteeBadge';
 
 type Bonus = {
   icon: React.ElementType;
@@ -141,11 +142,8 @@ export default function Bonuses() {
               </span>
             </button>
 
-            <div className="pt-8 mt-4" style={{ borderTop: '1px solid rgba(245,158,11,0.25)' }}>
-              <p className="text-xl text-amber-400 font-bold mb-2">Гаранция за връщане на парите</p>
-              <p className="text-blue-100/75 text-lg max-w-2xl mx-auto">
-                Ако се появиш и на 4-те дни и не останеш доволен от стойността, ще възвърнем сумата без никакви въпроси!
-              </p>
+            <div className="flex justify-center">
+              <GuaranteeBadge />
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { initiateCheckout } from '../utils/checkout';
+import GuaranteeBadge from './GuaranteeBadge';
 
 const schedule = [
   {
@@ -104,6 +105,9 @@ export default function EventSchedule() {
                 <span className="text-xl group-hover:translate-x-2 transition-transform duration-300">→</span>
               </span>
             </button>
+          </div>
+          <div className="mt-5 flex justify-center">
+            <GuaranteeBadge />
           </div>
         </div>
       </div>
