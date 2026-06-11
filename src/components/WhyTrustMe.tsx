@@ -27,11 +27,11 @@ export default function WhyTrustMe() {
           <div className="w-full lg:w-[360px] flex-shrink-0">
             <div className="relative">
               <div className="absolute -inset-3 rounded-3xl blur-2xl" style={{ background: 'rgba(245,158,11,0.12)' }} />
-              <div className="relative rounded-2xl overflow-hidden border shadow-2xl aspect-[3/4]" style={{ borderColor: 'rgba(245,158,11,0.25)', boxShadow: '0 25px 50px rgba(245,158,11,0.15)' }}>
+              <div className="relative rounded-2xl overflow-hidden border shadow-2xl" style={{ borderColor: 'rgba(245,158,11,0.25)', boxShadow: '0 25px 50px rgba(245,158,11,0.15)' }}>
                 <img
-                  src="/DSC05853.jpg"
+                  src="/IMG_0304.jpg"
                   alt="Иво Димовски"
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-auto block"
                   loading="eager"
                 />
                 <div className="absolute bottom-0 left-0 right-0 p-6" style={{ background: 'linear-gradient(to top, rgba(5,18,31,0.95) 0%, rgba(7,30,56,0.70) 50%, transparent 100%)' }}>

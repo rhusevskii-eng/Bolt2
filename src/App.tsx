@@ -1,7 +1,6 @@
 import Hero from './components/Hero';
 import MediaLogos from './components/MediaLogos';
 import EventDays from './components/EventDays';
-import RealDeals from './components/RealDeals';
 import WhoIsItFor from './components/WhoIsItFor';
 import EventSchedule from './components/EventSchedule';
 import TruthSection from './components/TruthSection';
@@ -24,7 +23,6 @@ function App() {
       <Hero />
       <MediaLogos />
       <EventDays />
-      <RealDeals />
       <WhoIsItFor />
       <EventSchedule />
       <TruthSection />
