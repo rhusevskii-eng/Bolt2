@@ -1,5 +1,5 @@
 import Hero from './components/Hero';
-import BuyersTicker from './components/BuyersTicker';
+import MediaLogos from './components/MediaLogos';
 import EventDays from './components/EventDays';
 import WhoIsItFor from './components/WhoIsItFor';
 import EventSchedule from './components/EventSchedule';
@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #05121f 0%, #071e38 30%, #05121f 60%, #071e38 80%, #05121f 100%)' }}>
       <Hero />
-      <BuyersTicker />
+      <MediaLogos />
       <EventDays />
       <WhoIsItFor />
       <EventSchedule />
