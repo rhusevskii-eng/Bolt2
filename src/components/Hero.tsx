@@ -36,7 +36,7 @@ export default function Hero() {
 
           {/* Headline */}
           <div>
-            <p className="text-blue-200/70 text-xl sm:text-2xl font-medium mb-3">4-Дневно Онлайн Обучение</p>
+            <p className="text-blue-200/70 text-xl sm:text-2xl font-medium mb-3">Най-известното 4-Дневно Онлайн Обучение С Над 500 участника</p>
             <h1 className="font-black leading-none tracking-tight">
               <span className="block text-amber-400 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-1">
                 "REAL ESTATE
@@ -93,7 +93,7 @@ export default function Hero() {
             <div className="absolute -inset-1 bg-gradient-to-r from-amber-500/25 via-amber-400/15 to-amber-500/25 rounded-3xl blur-xl" />
             <div className="relative p-8 sm:p-10 border border-amber-500/35 rounded-2xl" style={{ background: 'rgba(10,32,64,0.85)' }}>
               <p className="text-xl sm:text-2xl lg:text-3xl text-white font-bold leading-relaxed">
-                КАК ДА ИНВЕСТИРАШ В ИМОТИ ПО ПРАВИЛНИЯТ НАЧИН С ПРАВИЛНИТЕ ИНВЕСТИЦИОННИ СТРАТЕГИИ,
+                ВИЖ КАК ДА ИНВЕСТИРАШ В ИМОТИ ПО ПРАВИЛНИЯТ НАЧИН С ПРАВИЛНИТЕ ИНВЕСТИЦИОННИ СТРАТЕГИИ,
                 ДА РАЗЛИЧАВАШ{' '}
                 <span className="text-amber-400">ДОБРИТЕ СДЕЛКИ</span>
                 {' '}И ЛОШИТЕ СДЕЛКИ И ДА НАПРАВИШ{' '}
