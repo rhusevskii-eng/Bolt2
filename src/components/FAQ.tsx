@@ -1,94 +1,87 @@
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
   {
-    question: 'Как мога да съм сигурен че ще получа стойност? Какво ако не ми хареса?',
-    answer: 'Ако се появиш и на 4-те дни и не останеш доволен от стойността, която си получил, ще възвърнем сумата без никакви въпроси! Толкова съм сигурен в качеството на обучението.'
+    question: 'Как мога да съм сигурен, че ще получа стойност?',
+    answer: 'Ако се появиш и на 4-те дни и не останеш доволен от стойността, ще възвърнем сумата без никакви въпроси. Толкова съм сигурен в качеството на обучението.',
   },
   {
     question: 'Кога ще получа линка за включване онлайн?',
-    answer: 'След като закупите билет ще получите детайли по имейл - линкът за срещите ще бъде изпратен на 20 Юни, 5 дни преди първата сесия. Допълнително ще бъде споделен и във Viber групата 1 час преди началото на всяка сесия.'
+    answer: 'След покупка ще получиш детайли по имейл. Линкът за срещите ще бъде изпратен на 20 Юни — 5 дни преди първата сесия. Споделя се и във Viber групата 1 час преди всяка сесия.',
   },
   {
     question: 'Трябва ли да участвам и в четирите дни?',
-    answer: 'Не е задължително, но силно го препоръчваме, защото максималната стойност се постига при участие във всички дни.'
+    answer: 'Не е задължително, но силно го препоръчваме. Максималната стойност се постига при участие във всички дни.',
   },
   {
     question: 'Ще има ли запис на събитието?',
-    answer: 'Няма да има запис. Целта ни е всички участници да присъстват на живо, да задават въпроси и да извлекат максимална стойност.'
+    answer: 'Няма да има запис. Целта е всички участници да присъстват на живо, да задават въпроси и да извлекат максимална стойност.',
   },
   {
-    question: 'Нямам чак толкова много капитал, подходящ ли е спринтът за мен?',
-    answer: 'Абсолютно! Системата работи и за хора със по-малко капитал.'
+    question: 'Нямам чак толкова много капитал — подходящо ли е?',
+    answer: 'Абсолютно! Системата работи и за хора с по-малко капитал.',
   },
   {
-    question: 'Никога не съм купувал имот. Не е ли спринтът твърде напреднал за мен?',
-    answer: 'Не, точно обратното! Обучението е създадено специално за хора, които искат да направят първата си инвестиция правилно. Ще получиш цялата система от нулата - стъпка по стъпка.'
+    question: 'Никога не съм купувал имот. Не е ли твърде напреднало?',
+    answer: 'Точно обратното! Обучението е създадено за хора, искащи да направят първата си инвестиция правилно — цялата система от нулата, стъпка по стъпка.',
   },
   {
     question: 'Ще мога ли да задавам въпроси след обучението?',
-    answer: 'Да! По време на живите сесии можеш да задаваш въпроси в реално време. Това не е записан курс - това е интерактивно обучение където работим заедно.'
+    answer: 'По време на живите сесии можеш да задаваш въпроси в реално време. Не е записан курс — интерактивно обучение, работим заедно.',
   },
   {
-    question: 'Какво ако нямам време да приложа системата? Няма ли да са изхабени парите?',
-    answer: 'Системата е създадена точно за заети професионалисти. Не изисква цял ден работа - можеш да я приложиш с 5-10 часа седмично. Ако не можеш да отделиш толкова време, по-добре изчакай по-подходящ момент.'
+    question: 'Какво ако нямам време да приложа системата?',
+    answer: 'Системата е създадена за заети професионалисти. Не изисква цял ден — 5–10 часа седмично са достатъчни.',
   },
   {
     question: 'Защо да те слушам? Какъв е твоят опит?',
-    answer: 'Имам над 15 години опит в имоти, портфолио в 4 държави (Германия, Швейцария, България, Дубай), работил съм в adidas и Vodafone, управлявал съм екипи от над 200 души и участвал в 2 IPO на Wall Street. Но най-важното - научих се от собствените си грешки с реални пари, за да не правиш ти същите.'
-  }
+    answer: 'Портфолио в 4 държави (Германия, Швейцария, България, Дубай), работил в adidas и Vodafone, управлявал 200+ души, участвал в 2 IPO на Wall Street. Научих се от собствени грешки с реални пари.',
+  },
 ];
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+  const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="py-16 sm:py-24 bg-slate-800/30">
+    <section className="py-20 sm:py-32 relative overflow-hidden bg-white/[0.015]">
+      <div className="absolute top-0 inset-x-0 h-px divider-gold" />
+
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white text-center mb-16">
-          ЧЕСТО ЗАДАВАНИ ВЪПРОСИ
-        </h2>
+        <div className="mb-14 sm:mb-16">
+          <span className="section-label mb-4">Въпроси & Отговори</span>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mt-4">
+            Имаш <span className="text-gold-gradient">въпроси?</span>
+          </h2>
+        </div>
 
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
+        <div className="space-y-3">
+          {faqs.map((faq, i) => (
             <div
-              key={index}
-              className="group relative bg-gradient-to-br from-slate-800/60 via-slate-800/40 to-slate-900/60 backdrop-blur-sm border-2 border-slate-700/60 rounded-xl overflow-hidden hover:border-amber-500/60 transition-all duration-500 shadow-lg hover:shadow-xl hover:shadow-amber-500/10"
+              key={i}
+              className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
+                open === i ? 'border-amber-500/40 bg-amber-500/[0.05]' : 'border-white/8 bg-white/[0.02] hover:border-white/15'
+              }`}
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl" />
-
               <button
-                onClick={() => toggleFAQ(index)}
-                className="relative z-10 w-full px-6 py-5 flex items-center justify-between gap-4 text-left"
+                onClick={() => setOpen(open === i ? null : i)}
+                className="w-full flex items-center gap-4 sm:gap-6 px-5 sm:px-7 py-5 text-left"
               >
-                <span className="text-lg font-semibold text-white group-hover:text-amber-400 transition-colors">
-                  <span className="inline-block w-8 h-8 bg-gradient-to-br from-amber-500/20 to-amber-600/20 border border-amber-500/40 rounded-lg text-center leading-8 text-amber-400 mr-3 text-sm font-bold">
-                    {index + 1}
-                  </span>
+                <span className={`text-2xl font-black tabular-nums flex-shrink-0 transition-colors w-10 ${open === i ? 'text-amber-400' : 'text-white/20'}`}>
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span className={`flex-1 font-bold text-base sm:text-lg transition-colors ${open === i ? 'text-white' : 'text-slate-200'}`}>
                   {faq.question}
                 </span>
-                <div className="p-2 bg-gradient-to-br from-amber-500/20 to-amber-600/20 rounded-lg group-hover:scale-110 transition-transform duration-300">
-                  <ChevronDown
-                    className={`w-5 h-5 text-amber-400 flex-shrink-0 transition-transform duration-300 ${
-                      openIndex === index ? 'rotate-180' : ''
-                    }`}
-                  />
+                <div className={`p-1.5 rounded-lg flex-shrink-0 transition-all ${open === i ? 'bg-amber-500/20 text-amber-400' : 'text-slate-500'}`}>
+                  {open === i ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                 </div>
               </button>
 
-              <div
-                className={`overflow-hidden transition-all duration-300 ${
-                  openIndex === index ? 'max-h-96' : 'max-h-0'
-                }`}
-              >
-                <div className="px-6 pb-6 text-slate-300 leading-relaxed text-lg border-t border-slate-700/50 pt-4 mx-6">
+              <div className={`overflow-hidden transition-all duration-300 ${open === i ? 'max-h-64' : 'max-h-0'}`}>
+                <p className="px-5 sm:px-7 pb-6 text-slate-400 leading-relaxed text-base sm:text-lg" style={{ paddingLeft: 'calc(1.25rem + 2.5rem + 1.5rem)' }}>
                   {faq.answer}
-                </div>
+                </p>
               </div>
             </div>
           ))}

@@ -1,4 +1,5 @@
 import Hero from './components/Hero';
+import BuyersTicker from './components/BuyersTicker';
 import EventDays from './components/EventDays';
 import WhoIsItFor from './components/WhoIsItFor';
 import EventSchedule from './components/EventSchedule';
@@ -18,8 +19,9 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
+    <div className="min-h-screen bg-[#07070f]">
       <Hero />
+      <BuyersTicker />
       <EventDays />
       <WhoIsItFor />
       <EventSchedule />
