@@ -31,9 +31,9 @@ const bonuses: Bonus[] = [
   },
   {
     icon: Hammer,
-    title: '3-часова жива лекция и обиколка на Fix & Flip проект',
+    title: '3-часова жива лекция в София + обиколка на Fix & Flip проекта "Виста"',
     value: '297 евро',
-    description: 'Виждаш на живо как изглежда реален Fix & Flip проект - от закупуването, през ремонта, до продажбата. 3 часа на терен с конкретни числа, грешки и решения. Разбираш как да намериш подходящ имот, как да калкулираш ремонта и маржа, и как да излезеш с печалба.'
+    description: 'Първо — 3-часова лекция На Живо в София, където ще можеш да задаваш въпроси в реално време и да получиш директни отговори. После — реална обиколка на Fix & Flip проекта "Виста": виждаш с очите си как изглежда работещ проект на терен, с конкретни числа, взети решения и допуснати грешки. Две отделни преживявания, максимална стойност.'
   },
 ];
 
@@ -78,13 +78,13 @@ export default function Bonuses() {
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                 {bonus.image && (
-                  <div className="relative w-full h-52 sm:h-64 overflow-hidden">
+                  <div className="relative w-full h-72 sm:h-96 overflow-hidden">
                     <img
                       src={bonus.image}
                       alt={bonus.title}
-                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                      className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/20 to-transparent" />
                   </div>
                 )}
 
