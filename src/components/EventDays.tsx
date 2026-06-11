@@ -60,30 +60,32 @@ export default function EventDays() {
         <div className="space-y-0">
           {days.map((day, index) => {
             const Icon = day.icon;
-            const accentColor = day.isBonus ? 'teal' : 'amber';
+            const isBonus = day.isBonus;
             return (
               <div
                 key={index}
-                className="group relative border-t border-slate-700/60 py-10 sm:py-12 hover:border-amber-500/40 transition-colors duration-500"
+                className="group relative border-t py-10 sm:py-12 transition-colors duration-500"
+                style={{ borderColor: 'rgba(30,64,102,0.70)' }}
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-500/[0.04] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+                {/* Hover glow */}
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-xl" style={{ background: 'linear-gradient(90deg, rgba(245,158,11,0.05) 0%, transparent 60%)' }} />
 
                 <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-12">
                   {/* Number + meta */}
                   <div className="flex items-start gap-5 lg:w-56 flex-shrink-0">
-                    <span className="text-7xl sm:text-8xl font-black text-slate-700/80 group-hover:text-amber-500/20 leading-none transition-colors duration-500 select-none -mt-2 flex-shrink-0">
+                    <span className="text-7xl sm:text-8xl font-black leading-none transition-colors duration-500 select-none -mt-2 flex-shrink-0 group-hover:text-amber-500/20" style={{ color: 'rgba(14,45,87,0.90)' }}>
                       {day.num}
                     </span>
                     <div className="pt-1 flex-shrink-0">
                       <div className="flex items-center gap-2 mb-1">
                         <span className="section-label">{day.day}</span>
-                        {day.isBonus && (
+                        {isBonus && (
                           <span className="text-[9px] font-black tracking-widest uppercase px-1.5 py-0.5 bg-amber-500 text-slate-900 rounded">
                             БОНУС
                           </span>
                         )}
                       </div>
-                      <p className="text-slate-400 text-sm">{day.date}</p>
+                      <p className="text-blue-300/60 text-sm">{day.date}</p>
                       <p className="text-amber-400 text-sm font-bold">{day.time} ч.</p>
                     </div>
                   </div>
@@ -91,25 +93,27 @@ export default function EventDays() {
                   {/* Content */}
                   <div className="flex-1">
                     <div className="flex items-start gap-3 mb-4">
-                      <div className={`p-2.5 rounded-xl flex-shrink-0 mt-0.5 ${accentColor === 'teal' ? 'bg-teal-500/20 border border-teal-500/30' : 'bg-amber-500/20 border border-amber-500/30'}`}>
-                        <Icon className={`w-5 h-5 ${accentColor === 'teal' ? 'text-teal-400' : 'text-amber-400'}`} />
+                      <div className="p-2.5 rounded-xl flex-shrink-0 mt-0.5 border" style={isBonus
+                        ? { background: 'rgba(20,184,166,0.15)', borderColor: 'rgba(20,184,166,0.30)' }
+                        : { background: 'rgba(245,158,11,0.15)', borderColor: 'rgba(245,158,11,0.30)' }
+                      }>
+                        <Icon className={`w-5 h-5 ${isBonus ? 'text-teal-400' : 'text-amber-400'}`} />
                       </div>
                       <h3 className="text-xl sm:text-2xl font-black text-white leading-tight group-hover:text-amber-50 transition-colors">
                         {day.title}
                       </h3>
                     </div>
 
-                    <p className="text-slate-300 leading-relaxed mb-6 text-base max-w-2xl">{day.description}</p>
+                    <p className="text-blue-100/70 leading-relaxed mb-6 text-base max-w-2xl">{day.description}</p>
 
                     <div className="grid sm:grid-cols-3 gap-3">
                       {day.bullets.map((bullet, i) => (
-                        <div key={i} className={`flex items-start gap-2.5 p-4 rounded-xl border transition-colors ${
-                          accentColor === 'teal'
-                            ? 'bg-teal-900/30 border-teal-700/50 group-hover:border-teal-600/60'
-                            : 'bg-slate-800/70 border-slate-600/50 group-hover:border-amber-500/30'
-                        }`}>
-                          <span className={`flex-shrink-0 font-bold text-sm mt-0.5 ${accentColor === 'teal' ? 'text-teal-400' : 'text-amber-400'}`}>✓</span>
-                          <span className="text-slate-200 text-sm leading-snug">{bullet}</span>
+                        <div key={i} className="flex items-start gap-2.5 p-4 rounded-xl border transition-all duration-200 group-hover:border-opacity-80" style={isBonus
+                          ? { background: 'rgba(13,42,64,0.70)', borderColor: 'rgba(20,184,166,0.25)' }
+                          : { background: 'rgba(10,32,64,0.70)', borderColor: 'rgba(30,64,102,0.70)' }
+                        }>
+                          <span className={`flex-shrink-0 font-bold text-sm mt-0.5 ${isBonus ? 'text-teal-400' : 'text-amber-400'}`}>✓</span>
+                          <span className="text-blue-50/85 text-sm leading-snug">{bullet}</span>
                         </div>
                       ))}
                     </div>
@@ -118,7 +122,7 @@ export default function EventDays() {
               </div>
             );
           })}
-          <div className="border-t border-slate-700/60" />
+          <div className="border-t" style={{ borderColor: 'rgba(30,64,102,0.70)' }} />
         </div>
       </div>
     </section>

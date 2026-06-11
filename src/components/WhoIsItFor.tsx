@@ -18,7 +18,7 @@ const notForYou = [
 
 export default function WhoIsItFor() {
   return (
-    <section className="py-20 sm:py-32 relative overflow-hidden bg-white/[0.015]">
+    <section className="py-20 sm:py-32 relative overflow-hidden" style={{ background: 'rgba(10,32,64,0.45)' }}>
       <div className="absolute top-0 inset-x-0 h-px divider-gold" />
       <div className="absolute bottom-0 inset-x-0 h-px divider-gold" />
 
@@ -31,22 +31,23 @@ export default function WhoIsItFor() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-6">
-          <div className="relative rounded-3xl overflow-hidden border border-emerald-500/20 bg-gradient-to-br from-emerald-950/40 to-transparent p-8 sm:p-10">
-            <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-500/8 rounded-full blur-3xl pointer-events-none" />
+          {/* For you */}
+          <div className="relative rounded-3xl overflow-hidden border p-8 sm:p-10" style={{ background: 'rgba(5,40,30,0.50)', borderColor: 'rgba(52,211,153,0.20)' }}>
+            <div className="absolute top-0 right-0 w-48 h-48 rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(52,211,153,0.07)' }} />
             <div className="relative">
               <div className="flex items-center gap-3 mb-8">
-                <div className="p-2 bg-emerald-500/15 rounded-lg">
+                <div className="p-2 rounded-lg" style={{ background: 'rgba(52,211,153,0.15)' }}>
                   <CheckCircle2 className="w-6 h-6 text-emerald-400" />
                 </div>
                 <h3 className="text-2xl font-black text-white">ТОВА Е ЗА ТЕБ АКО:</h3>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {forYou.map((item, i) => (
-                  <div key={i} className="flex gap-4 p-4 rounded-2xl bg-emerald-500/[0.05] border border-emerald-500/10 hover:border-emerald-500/25 transition-colors">
+                  <div key={i} className="flex gap-4 p-4 rounded-2xl border transition-colors" style={{ background: 'rgba(52,211,153,0.05)', borderColor: 'rgba(52,211,153,0.12)' }}>
                     <span className="text-emerald-400 font-black text-lg flex-shrink-0 mt-0.5">✓</span>
                     <div>
                       <p className="font-bold text-white text-sm mb-1">{item.title}</p>
-                      <p className="text-slate-400 text-sm leading-relaxed">{item.description}</p>
+                      <p className="text-blue-100/60 text-sm leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -54,22 +55,23 @@ export default function WhoIsItFor() {
             </div>
           </div>
 
-          <div className="relative rounded-3xl overflow-hidden border border-red-500/20 bg-gradient-to-br from-red-950/30 to-transparent p-8 sm:p-10">
-            <div className="absolute bottom-0 left-0 w-48 h-48 bg-red-500/8 rounded-full blur-3xl pointer-events-none" />
+          {/* Not for you */}
+          <div className="relative rounded-3xl overflow-hidden border p-8 sm:p-10" style={{ background: 'rgba(45,10,15,0.50)', borderColor: 'rgba(248,113,113,0.20)' }}>
+            <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full blur-3xl pointer-events-none" style={{ background: 'rgba(248,113,113,0.07)' }} />
             <div className="relative">
               <div className="flex items-center gap-3 mb-8">
-                <div className="p-2 bg-red-500/15 rounded-lg">
+                <div className="p-2 rounded-lg" style={{ background: 'rgba(248,113,113,0.15)' }}>
                   <XCircle className="w-6 h-6 text-red-400" />
                 </div>
                 <h3 className="text-2xl font-black text-white">ТОВА НЕ Е ЗА ТЕБ АКО:</h3>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 {notForYou.map((item, i) => (
-                  <div key={i} className="flex gap-4 p-4 rounded-2xl bg-red-500/[0.05] border border-red-500/10 hover:border-red-500/25 transition-colors">
+                  <div key={i} className="flex gap-4 p-4 rounded-2xl border transition-colors" style={{ background: 'rgba(248,113,113,0.05)', borderColor: 'rgba(248,113,113,0.12)' }}>
                     <span className="text-red-400 font-black text-lg flex-shrink-0 mt-0.5">✗</span>
                     <div>
                       <p className="font-bold text-white text-sm mb-1">{item.title}</p>
-                      <p className="text-slate-400 text-sm leading-relaxed">{item.description}</p>
+                      <p className="text-blue-100/60 text-sm leading-relaxed">{item.description}</p>
                     </div>
                   </div>
                 ))}

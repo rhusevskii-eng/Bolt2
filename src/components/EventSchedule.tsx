@@ -1,32 +1,32 @@
 import { initiateCheckout } from '../utils/checkout';
 
-export default function EventSchedule() {
-  const schedule = [
-    {
-      num: '01', day: 'ЧЕТВЪРТЪК', date: '25 Юни',
-      title: 'Разбиваме митовете и разкриваме механиката',
-      description: 'Ще седнем на живо за 2 часа и ще разбием всички митове за имотите. Ще ти покажа как наистина работи играта, откъде идва печалбата и как да разпознаваш добри сделки без да губиш време.',
-    },
-    {
-      num: '02', day: 'ПЕТЪК', date: '26 Юни',
-      title: 'Влизаме в анализа',
-      description: 'Ще видиш как анализираме истински обяви в реално време. Получаваш точните формули за бърза оценка на място и имот.',
-    },
-    {
-      num: '03', day: 'СЪБОТА', date: '27 Юни',
-      title: 'От теория към действие — първите стъпки',
-      description: 'Финална 2.5-часова сесия, превръщаща всичко в конкретен план. Получаваш системата, списъците и точните стъпки от понеделник нататък.',
-    },
-    {
-      num: '04', day: 'НЕДЕЛЯ', date: '28 Юни',
-      title: 'Застраховане + Инвестиране в чужбина',
-      description: 'Бонус ден — разкривам как да защитиш инвестицията и как да инвестираш в Германия и Швейцария.',
-      isBonus: true,
-    },
-  ];
+const schedule = [
+  {
+    num: '01', day: 'ЧЕТВЪРТЪК', date: '25 Юни',
+    title: 'Разбиваме митовете и разкриваме механиката',
+    description: 'Ще седнем на живо за 2 часа и ще разбием всички митове за имотите. Ще ти покажа как наистина работи играта, откъде идва печалбата и как да разпознаваш добри сделки без да губиш време.',
+  },
+  {
+    num: '02', day: 'ПЕТЪК', date: '26 Юни',
+    title: 'Влизаме в анализа',
+    description: 'Ще видиш как анализираме истински обяви в реално време. Получаваш точните формули за бърза оценка на място и имот.',
+  },
+  {
+    num: '03', day: 'СЪБОТА', date: '27 Юни',
+    title: 'От теория към действие — първите стъпки',
+    description: 'Финална 2.5-часова сесия, превръщаща всичко в конкретен план. Получаваш системата, списъците и точните стъпки от понеделник нататък.',
+  },
+  {
+    num: '04', day: 'НЕДЕЛЯ', date: '28 Юни',
+    title: 'Застраховане + Инвестиране в чужбина',
+    description: 'Бонус ден — разкривам как да защитиш инвестицията и как да инвестираш в Германия и Швейцария.',
+    isBonus: true,
+  },
+];
 
+export default function EventSchedule() {
   return (
-    <section className="py-20 sm:py-32 relative overflow-hidden bg-white/[0.015]">
+    <section className="py-20 sm:py-32 relative overflow-hidden" style={{ background: 'rgba(6,21,38,0.55)' }}>
       <div className="absolute top-0 inset-x-0 h-px divider-gold" />
       <div className="absolute bottom-0 inset-x-0 h-px divider-gold" />
 
@@ -42,27 +42,29 @@ export default function EventSchedule() {
           {schedule.map((item, i) => (
             <div
               key={i}
-              className={`group relative rounded-2xl border p-6 sm:p-8 transition-all duration-300 overflow-hidden ${
-                item.isBonus
-                  ? 'border-teal-500/25 bg-teal-500/[0.04] hover:border-teal-500/40'
-                  : 'border-white/8 bg-white/[0.02] hover:border-amber-500/25'
-              }`}
+              className="group relative rounded-2xl border p-6 sm:p-8 transition-all duration-300 overflow-hidden"
+              style={item.isBonus
+                ? { background: 'rgba(8,30,46,0.75)', borderColor: 'rgba(20,184,166,0.25)' }
+                : { background: 'rgba(10,32,64,0.55)', borderColor: 'rgba(30,64,102,0.60)' }
+              }
             >
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400 pointer-events-none" style={{ background: 'linear-gradient(90deg, rgba(245,158,11,0.05) 0%, transparent 60%)' }} />
+
               <div className="flex flex-col sm:flex-row gap-6 sm:items-start relative z-10">
                 <div className="flex items-center gap-4 sm:flex-col sm:items-start sm:w-36 flex-shrink-0">
-                  <span className={`text-5xl sm:text-6xl font-black leading-none transition-colors ${item.isBonus ? 'text-teal-500/15 group-hover:text-teal-500/25' : 'text-white/8 group-hover:text-amber-500/12'}`}>
+                  <span className="text-5xl sm:text-6xl font-black leading-none select-none transition-colors duration-400 group-hover:text-amber-500/20" style={{ color: 'rgba(14,45,87,0.90)' }}>
                     {item.num}
                   </span>
                   <div>
                     <div className="flex items-center gap-2">
-                      <p className={`text-xs font-bold tracking-widest uppercase ${item.isBonus ? 'text-teal-400' : 'text-amber-400'}`}>
+                      <p className="text-xs font-bold tracking-widest uppercase text-amber-400">
                         {item.day}
                       </p>
                       {item.isBonus && (
-                        <span className="text-[9px] font-black uppercase bg-teal-500/20 text-teal-300 border border-teal-500/30 px-1.5 py-0.5 rounded">БОНУС</span>
+                        <span className="text-[9px] font-black uppercase border px-1.5 py-0.5 rounded" style={{ background: 'rgba(20,184,166,0.15)', color: 'rgb(94,234,212)', borderColor: 'rgba(20,184,166,0.30)' }}>БОНУС</span>
                       )}
                     </div>
-                    <p className="text-slate-400 text-sm">{item.date}</p>
+                    <p className="text-blue-300/60 text-sm">{item.date}</p>
                   </div>
                 </div>
 
@@ -70,14 +72,11 @@ export default function EventSchedule() {
                   <h3 className="text-xl sm:text-2xl font-black text-white mb-3 group-hover:text-amber-50 transition-colors leading-tight">
                     {item.title}
                   </h3>
-                  <p className="text-slate-400 leading-relaxed mb-5 text-base">{item.description}</p>
+                  <p className="text-blue-100/70 leading-relaxed mb-5 text-base">{item.description}</p>
                   <button
                     onClick={initiateCheckout}
-                    className={`inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-lg border transition-all duration-200 ${
-                      item.isBonus
-                        ? 'border-teal-500/30 text-teal-400 hover:bg-teal-500/10'
-                        : 'border-amber-500/30 text-amber-400 hover:bg-amber-500/10'
-                    }`}
+                    className="inline-flex items-center gap-2 text-sm font-bold px-4 py-2 rounded-lg border transition-all duration-200 hover:text-slate-900 hover:bg-amber-400"
+                    style={{ borderColor: 'rgba(245,158,11,0.35)', color: 'rgb(251,191,36)' }}
                   >
                     Запиши се →
                   </button>

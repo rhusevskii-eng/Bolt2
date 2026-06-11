@@ -19,7 +19,7 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#07070f]">
+    <div className="min-h-screen" style={{ background: 'linear-gradient(180deg, #05121f 0%, #071e38 30%, #05121f 60%, #071e38 80%, #05121f 100%)' }}>
       <Hero />
       <BuyersTicker />
       <EventDays />

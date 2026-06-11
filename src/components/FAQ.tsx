@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     question: 'Кога ще получа линка за включване онлайн?',
-    answer: 'След покупка ще получиш детайли по имейл. Линкът за срещите ще бъде изпратен на 20 Юни — 5 дни преди първата сесия. Споделя се и във Viber групата 1 час преди всяка сесия.',
+    answer: 'След покупка ще получиш детайли по имейл. Линкът ще бъде изпратен на 20 Юни — 5 дни преди първата сесия. Споделя се и във Viber групата 1 час преди всяка сесия.',
   },
   {
     question: 'Трябва ли да участвам и в четирите дни?',
@@ -44,7 +44,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="py-20 sm:py-32 relative overflow-hidden bg-white/[0.015]">
+    <section className="py-20 sm:py-32 relative overflow-hidden" style={{ background: 'rgba(10,32,64,0.35)' }}>
       <div className="absolute top-0 inset-x-0 h-px divider-gold" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,27 +59,29 @@ export default function FAQ() {
           {faqs.map((faq, i) => (
             <div
               key={i}
-              className={`rounded-2xl border transition-all duration-300 overflow-hidden ${
-                open === i ? 'border-amber-500/40 bg-amber-500/[0.05]' : 'border-white/8 bg-white/[0.02] hover:border-white/15'
-              }`}
+              className="rounded-2xl overflow-hidden transition-all duration-300"
+              style={open === i
+                ? { background: 'rgba(10,32,64,0.75)', border: '1px solid rgba(245,158,11,0.35)' }
+                : { background: 'rgba(7,22,42,0.70)', border: '1px solid rgba(30,64,102,0.55)' }
+              }
             >
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="w-full flex items-center gap-4 sm:gap-6 px-5 sm:px-7 py-5 text-left"
               >
-                <span className={`text-2xl font-black tabular-nums flex-shrink-0 transition-colors w-10 ${open === i ? 'text-amber-400' : 'text-white/20'}`}>
+                <span className="text-2xl font-black tabular-nums flex-shrink-0 transition-colors w-10" style={{ color: open === i ? 'rgb(251,191,36)' : 'rgba(30,64,102,0.90)' }}>
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <span className={`flex-1 font-bold text-base sm:text-lg transition-colors ${open === i ? 'text-white' : 'text-slate-200'}`}>
+                <span className="flex-1 font-bold text-base sm:text-lg" style={{ color: open === i ? 'white' : 'rgba(224,231,255,0.85)' }}>
                   {faq.question}
                 </span>
-                <div className={`p-1.5 rounded-lg flex-shrink-0 transition-all ${open === i ? 'bg-amber-500/20 text-amber-400' : 'text-slate-500'}`}>
+                <div className="p-1.5 rounded-lg flex-shrink-0 transition-all" style={open === i ? { background: 'rgba(245,158,11,0.15)', color: 'rgb(251,191,36)' } : { color: 'rgba(30,64,102,0.90)' }}>
                   {open === i ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                 </div>
               </button>
 
               <div className={`overflow-hidden transition-all duration-300 ${open === i ? 'max-h-64' : 'max-h-0'}`}>
-                <p className="px-5 sm:px-7 pb-6 text-slate-400 leading-relaxed text-base sm:text-lg" style={{ paddingLeft: 'calc(1.25rem + 2.5rem + 1.5rem)' }}>
+                <p className="pb-6 text-blue-100/70 leading-relaxed text-base sm:text-lg" style={{ paddingLeft: 'calc(1.25rem + 2.5rem + 1.5rem)', paddingRight: '1.25rem' }}>
                   {faq.answer}
                 </p>
               </div>
