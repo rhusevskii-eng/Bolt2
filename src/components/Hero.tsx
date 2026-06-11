@@ -35,14 +35,45 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <div>
-            <p className="text-blue-200/70 text-xl sm:text-2xl font-medium mb-3">Най-известното 4-Дневно Онлайн Обучение С Над 500 участника</p>
-            <h1 className="font-black leading-none tracking-tight">
-              <span className="block text-amber-400 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-1">
-                "REAL ESTATE
+          <div className="space-y-4">
+            <p className="text-blue-200/65 text-lg sm:text-xl font-medium tracking-wide uppercase" style={{ letterSpacing: '0.08em' }}>
+              Най-Известното 4-Дневно Онлайн Обучение за Имоти С Над 500 Участника До Сега!
+            </p>
+            <h1 className="font-black leading-none" style={{ letterSpacing: '-0.03em' }}>
+              <span
+                className="block text-5xl sm:text-6xl lg:text-7xl xl:text-8xl mb-1"
+                style={{
+                  background: 'linear-gradient(135deg, #e2e8f0 0%, #ffffff 45%, #cbd5e1 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                }}
+              >
+                REAL ESTATE
               </span>
-              <span className="block text-white text-5xl sm:text-6xl lg:text-7xl xl:text-8xl">
-                MASTERY"
+
+              {/* Decorative divider */}
+              <div className="flex items-center justify-center gap-3 my-2">
+                <div className="h-px flex-1 max-w-[120px]" style={{ background: 'linear-gradient(to right, transparent, rgba(245,158,11,0.6))' }} />
+                <div className="flex gap-1.5">
+                  <span className="w-1 h-1 rounded-full bg-amber-500/60" />
+                  <span className="w-2 h-2 rounded-full bg-amber-400" />
+                  <span className="w-1 h-1 rounded-full bg-amber-500/60" />
+                </div>
+                <div className="h-px flex-1 max-w-[120px]" style={{ background: 'linear-gradient(to left, transparent, rgba(245,158,11,0.6))' }} />
+              </div>
+
+              <span
+                className="block text-5xl sm:text-6xl lg:text-7xl xl:text-8xl"
+                style={{
+                  background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 30%, #fde68a 60%, #f59e0b 80%, #d97706 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  backgroundClip: 'text',
+                  filter: 'drop-shadow(0 0 40px rgba(245,158,11,0.45))',
+                }}
+              >
+                MASTERY
               </span>
             </h1>
           </div>
