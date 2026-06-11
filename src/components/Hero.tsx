@@ -70,6 +70,35 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* VSL Video */}
+          <div className="max-w-4xl mx-auto relative">
+            <div className="absolute -inset-1.5 rounded-3xl blur-2xl" style={{ background: 'linear-gradient(135deg, rgba(245,158,11,0.25) 0%, rgba(30,64,102,0.40) 50%, rgba(245,158,11,0.20) 100%)' }} />
+            <div className="relative rounded-2xl overflow-hidden border shadow-2xl" style={{ borderColor: 'rgba(245,158,11,0.35)', boxShadow: '0 30px 80px rgba(5,18,31,0.60), 0 0 0 1px rgba(245,158,11,0.15)' }}>
+              {/* Top bar chrome */}
+              <div className="flex items-center gap-2 px-4 py-2.5" style={{ background: 'rgba(10,32,64,0.95)' }}>
+                <div className="flex gap-1.5">
+                  <span className="w-3 h-3 rounded-full" style={{ background: 'rgba(248,113,113,0.70)' }} />
+                  <span className="w-3 h-3 rounded-full" style={{ background: 'rgba(251,191,36,0.70)' }} />
+                  <span className="w-3 h-3 rounded-full" style={{ background: 'rgba(52,211,153,0.70)' }} />
+                </div>
+                <div className="flex-1 flex justify-center">
+                  <span className="text-xs font-medium" style={{ color: 'rgba(148,163,184,0.60)' }}>Real Estate Mastery — Гледай преди да решиш</span>
+                </div>
+              </div>
+              {/* 16:9 video */}
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/66R3c_3-yL4?rel=0&modestbranding=1&color=white"
+                  title="Real Estate Mastery VSL"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                  style={{ border: 'none' }}
+                />
+              </div>
+            </div>
+          </div>
+
           {/* Value proposition box */}
           <div className="max-w-4xl mx-auto relative">
             <div className="absolute -inset-1 bg-gradient-to-r from-amber-500/25 via-amber-400/15 to-amber-500/25 rounded-3xl blur-xl" />
