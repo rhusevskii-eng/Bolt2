@@ -2,10 +2,10 @@ export default function MediaLogos() {
   const logos = [
     { src: '/DARRIK.webp', alt: 'Darik', width: 130 },
     { src: '/NOVA.webp', alt: 'Nova', width: 110 },
-    { src: '/images.png', alt: 'Adidas', width: 90 },
+    { src: '/images.png', alt: 'Investor', width: 90 },
     { src: '/Kapital_.svg', alt: 'Kapital', width: 150 },
-    { src: '/24chasa-og copy.jpg', alt: '24 часа', width: 130 },
-    { src: '/Bloomberg_TV_Bulgaria copy.jpeg', alt: 'Bloomberg TV Bulgaria', width: 160 },
+    { src: '/24chasa-og%20copy.jpg', alt: '24 часа', width: 130 },
+    { src: '/Bloomberg_TV_Bulgaria%20copy.jpeg', alt: 'Bloomberg TV Bulgaria', width: 160 },
     { src: '/Screenshot_2026-06-11_at_20.40.16.png', alt: 'Forbes Bulgaria', width: 140 },
   ];
 
