@@ -38,7 +38,7 @@ export default function EventSchedule() {
           </h2>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 mb-14">
           {schedule.map((item, i) => (
             <div
               key={i}
@@ -84,6 +84,27 @@ export default function EventSchedule() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* CTA after schedule */}
+        <div className="text-center">
+          <div className="relative inline-block mb-6">
+            <div className="absolute -inset-3 rounded-3xl blur-2xl" style={{ background: 'rgba(245,158,11,0.18)' }} />
+            <p className="relative text-blue-100/70 text-lg">
+              Готов да влезеш в 4-те дни? <span className="text-amber-400 font-bold">Местата са ограничени.</span>
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <button
+              onClick={initiateCheckout}
+              className="btn-shimmer group relative px-10 py-5 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-slate-900 text-xl font-black rounded-xl hover:from-amber-400 hover:to-amber-500 active:scale-95 transform hover:scale-105 transition-all duration-300 shadow-2xl shadow-amber-500/40"
+            >
+              <span className="relative z-10 flex items-center gap-3">
+                ЗАПИШИ СЕ СЕГА
+                <span className="text-xl group-hover:translate-x-2 transition-transform duration-300">→</span>
+              </span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
