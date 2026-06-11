@@ -13,7 +13,7 @@ export default function Footer() {
           <span className="section-label mb-6">Готов ли си?</span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-6 leading-tight mt-4">
             Вземи своето място<br />
-            <span className="text-gold-gradient">преди да е свършило</span>
+            <span className="text-amber-400">преди да е свършило</span>
           </h2>
           <p className="text-slate-300 text-lg sm:text-xl mb-10 max-w-2xl mx-auto leading-relaxed">
             Обучението започва на <span className="text-white font-bold">25 Юни, 19:00 ч.</span> Получаваш 4 бонуса на обща стойност{' '}

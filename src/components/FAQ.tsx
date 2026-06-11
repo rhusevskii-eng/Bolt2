@@ -51,7 +51,7 @@ export default function FAQ() {
         <div className="mb-14 sm:mb-16">
           <span className="section-label mb-4">Въпроси & Отговори</span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mt-4">
-            Имаш <span className="text-gold-gradient">въпроси?</span>
+            Имаш <span className="text-amber-400">въпроси?</span>
           </h2>
         </div>
 

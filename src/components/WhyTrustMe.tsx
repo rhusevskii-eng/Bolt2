@@ -18,7 +18,7 @@ export default function WhyTrustMe() {
           <span className="section-label mb-4">Доверие</span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mt-4">
             <span className="text-white">Защо да ми </span>
-            <span className="text-gold-gradient">вярваш?</span>
+            <span className="text-amber-400">вярваш?</span>
           </h2>
         </div>
 
@@ -81,7 +81,7 @@ export default function WhyTrustMe() {
         <div className="mt-14 pt-10 border-t border-white/8 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8">
           {stats.map((stat, i) => (
             <div key={i} className="text-center group">
-              <div className="text-4xl sm:text-5xl lg:text-6xl font-black text-gold-gradient mb-2 group-hover:scale-105 transition-transform inline-block">
+              <div className="text-4xl sm:text-5xl lg:text-6xl font-black text-amber-400 mb-2 group-hover:scale-105 transition-transform inline-block">
                 {stat.value}
               </div>
               <div className="text-slate-400 text-sm font-medium">{stat.label}</div>

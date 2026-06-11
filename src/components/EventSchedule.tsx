@@ -34,7 +34,7 @@ export default function EventSchedule() {
         <div className="mb-14 sm:mb-16">
           <span className="section-label mb-4">Хронология</span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mt-4">
-            Как ще протекат <span className="text-gold-gradient">4-те дни</span>
+            Как ще протекат <span className="text-amber-400">4-те дни</span>
           </h2>
         </div>
 

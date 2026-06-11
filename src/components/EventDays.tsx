@@ -37,7 +37,7 @@ export default function EventDays() {
           <span className="section-label mb-4">Програма на обучението</span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mt-4">
             Ето какво ще разбереш<br />
-            <span className="text-gold-gradient">през 4-те дни</span>
+            <span className="text-amber-400">през 4-те дни</span>
           </h2>
         </div>
 

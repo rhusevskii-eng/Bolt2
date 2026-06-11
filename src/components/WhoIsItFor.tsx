@@ -26,7 +26,7 @@ export default function WhoIsItFor() {
         <div className="mb-14 sm:mb-16">
           <span className="section-label mb-4">Идентификация</span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mt-4">
-            За кого е <span className="text-gold-gradient">това обучение?</span>
+            За кого е <span className="text-amber-400">това обучение?</span>
           </h2>
         </div>
 

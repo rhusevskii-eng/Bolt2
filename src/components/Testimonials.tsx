@@ -48,7 +48,7 @@ export default function Testimonials() {
         <div className="mb-14 sm:mb-16">
           <span className="section-label mb-4">Социално доказателство</span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mt-4">
-            Какво казват <span className="text-gold-gradient">хората</span>
+            Какво казват <span className="text-amber-400">хората</span>
           </h2>
           <p className="text-slate-400 text-lg mt-3">от минали обучения</p>
         </div>
