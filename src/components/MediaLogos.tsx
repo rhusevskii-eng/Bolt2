@@ -10,7 +10,6 @@ export default function MediaLogos() {
   const logos: Logo[] = [
     { src: '/DARRIK.webp', alt: 'Darik', width: 130, blendMode: 'screen' },
     { src: '/NOVA.webp', alt: 'Nova', width: 110, filter: 'grayscale(1)' },
-    { src: '/images.png', alt: 'adidas', width: 90, filter: 'invert(1)', blendMode: 'screen' },
     { src: '/Kapital_.svg', alt: 'Kapital', width: 150, filter: 'brightness(0) invert(1)' },
     { src: '/24chasa-og%20copy.jpg', alt: '24 часа', width: 130, filter: 'invert(1)', blendMode: 'screen' },
     { src: '/Bloomberg_TV_Bulgaria%20copy.jpeg', alt: 'Bloomberg TV Bulgaria', width: 160, filter: 'grayscale(1)' },
