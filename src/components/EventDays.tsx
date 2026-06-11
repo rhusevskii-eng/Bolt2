@@ -73,7 +73,7 @@ export default function EventDays() {
                 <div className="relative flex flex-col lg:flex-row gap-8 lg:gap-12">
                   {/* Number + meta */}
                   <div className="flex items-start gap-5 lg:w-56 flex-shrink-0">
-                    <span className="text-7xl sm:text-8xl font-black leading-none transition-colors duration-500 select-none -mt-2 flex-shrink-0 group-hover:text-amber-500/20" style={{ color: 'rgba(14,45,87,0.90)' }}>
+                    <span className="text-7xl sm:text-8xl font-black leading-none transition-colors duration-500 select-none -mt-2 flex-shrink-0" style={{ color: 'rgba(255,255,255,0.18)' }}>
                       {day.num}
                     </span>
                     <div className="pt-1 flex-shrink-0">
