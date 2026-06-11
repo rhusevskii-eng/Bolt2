@@ -1,17 +1,6 @@
 import { Calendar, Clock, TrendingUp } from 'lucide-react';
-import { initiateCheckout } from '../utils/checkout';
-import { trackEvent } from '../utils/googleAnalytics';
 
 export default function Hero() {
-  const handleCheckoutClick = () => {
-    trackEvent('begin_checkout', {
-      currency: 'EUR',
-      value: 37,
-      items: [{ item_id: 'real-estate-mastery', item_name: 'Real Estate Mastery Course', price: 37, quantity: 1 }]
-    });
-    initiateCheckout();
-  };
-
   return (
     <section className="relative overflow-hidden min-h-screen flex items-center">
       {/* Background photo */}
@@ -124,28 +113,6 @@ export default function Hero() {
             Без да рискуват всичко &bull; Без да стават наемодатели на пълен работен ден &bull; Без да губят години
           </p>
 
-          {/* Price + CTA */}
-          <div className="flex flex-col items-center gap-6">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-amber-500/18 rounded-3xl blur-2xl" />
-              <div className="relative px-10 py-8 border border-amber-500/40 rounded-2xl" style={{ background: 'rgba(10,32,64,0.90)' }}>
-                <p className="text-amber-400 text-xl font-bold mb-2">Получи достъп само за</p>
-                <p className="text-7xl sm:text-9xl text-white font-black leading-none">
-                  37<span className="text-amber-400 text-4xl sm:text-5xl">€</span>
-                </p>
-              </div>
-            </div>
-
-            <button
-              onClick={handleCheckoutClick}
-              className="btn-shimmer group px-12 sm:px-16 py-6 sm:py-7 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-600 text-slate-900 text-xl sm:text-2xl font-black rounded-2xl shadow-2xl shadow-amber-500/50 hover:shadow-amber-400/70 hover:from-amber-400 hover:to-amber-500 active:scale-95 transition-all duration-300"
-            >
-              <span className="flex items-center gap-3">
-                ЗАПИШИ СЕ СЕГА!
-                <span className="text-2xl group-hover:translate-x-1 transition-transform inline-block">→</span>
-              </span>
-            </button>
-          </div>
         </div>
       </div>
     </section>
