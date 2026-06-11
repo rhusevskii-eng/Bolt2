@@ -1,7 +1,15 @@
-import { Gift, MapPin, Globe, Video } from 'lucide-react';
+import { Gift, MapPin, Globe, Video, Hammer } from 'lucide-react';
 import { initiateCheckout } from '../utils/checkout';
 
-const bonuses = [
+type Bonus = {
+  icon: React.ElementType;
+  title: string;
+  value: string;
+  description: string;
+  image?: string;
+};
+
+const bonuses: Bonus[] = [
   {
     icon: MapPin,
     title: '5-те най-добри района в България за инвестиция',
@@ -18,7 +26,14 @@ const bonuses = [
     icon: Video,
     title: 'Пълен 6-часов запис на живото събитие "Квадратни Метри 2026" в "Гранд Хотел Милениум"',
     value: '147 евро',
-    description: 'Получаваш пълен достъп до целия запис на едно от най-големите събития за инвеститори в имоти в България. 6 часа концентрирано съдържание, презентации и дискусии от живото събитие в Гранд Хотел Милениум - материал, който можеш да гледаш многократно и да прилагаш на собственото си темпо.'
+    description: 'Получаваш пълен достъп до целия запис на едно от най-големите събития за инвеститори в имоти в България. 6 часа концентрирано съдържание, презентации и дискусии от живото събитие в Гранд Хотел Милениум - материал, който можеш да гледаш многократно и да прилагаш на собственото си темпо.',
+    image: '/IMG_0124.jpg',
+  },
+  {
+    icon: Hammer,
+    title: '3-часова жива лекция и обиколка на Fix & Flip проект',
+    value: '297 евро',
+    description: 'Виждаш на живо как изглежда реален Fix & Flip проект - от закупуването, през ремонта, до продажбата. 3 часа на терен с конкретни числа, грешки и решения. Разбираш как да намериш подходящ имот, как да калкулираш ремонта и маржа, и как да излезеш с печалба.'
   },
 ];
 
@@ -58,11 +73,22 @@ export default function Bonuses() {
             return (
               <div
                 key={index}
-                className="group relative bg-gradient-to-br from-slate-800/60 via-slate-800/40 to-slate-900/60 backdrop-blur-sm border-2 border-slate-700/60 rounded-2xl p-6 sm:p-8 hover:border-amber-500/60 transition-all duration-500 hover:transform hover:-translate-y-1 shadow-xl hover:shadow-2xl hover:shadow-amber-500/20"
+                className="group relative bg-gradient-to-br from-slate-800/60 via-slate-800/40 to-slate-900/60 backdrop-blur-sm border-2 border-slate-700/60 rounded-2xl overflow-hidden hover:border-amber-500/60 transition-all duration-500 hover:transform hover:-translate-y-1 shadow-xl hover:shadow-2xl hover:shadow-amber-500/20"
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/10 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                <div className="relative z-10 flex flex-col sm:flex-row gap-6">
+                {bonus.image && (
+                  <div className="relative w-full h-52 sm:h-64 overflow-hidden">
+                    <img
+                      src={bonus.image}
+                      alt={bonus.title}
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent" />
+                  </div>
+                )}
+
+                <div className="relative z-10 flex flex-col sm:flex-row gap-6 p-6 sm:p-8">
                   <div className="flex-shrink-0">
                     <div className="w-20 h-20 bg-gradient-to-br from-amber-500 to-amber-600 rounded-2xl flex items-center justify-center shadow-lg shadow-amber-500/30 group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                       <Icon className="w-10 h-10 text-slate-900" />
@@ -98,7 +124,7 @@ export default function Bonuses() {
           <div className="relative z-10 space-y-8">
             <div>
               <p className="text-slate-400 text-xl mb-2">ОБЩА СТОЙНОСТ:</p>
-              <p className="text-4xl sm:text-5xl font-bold text-slate-500 line-through mb-4">551 евро</p>
+              <p className="text-4xl sm:text-5xl font-bold text-slate-500 line-through mb-4">848 евро</p>
             </div>
 
             <div className="relative inline-block">
