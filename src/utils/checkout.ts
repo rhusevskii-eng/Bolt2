@@ -9,7 +9,7 @@ export async function initiateCheckout() {
       return;
     }
 
-    const response = await fetch(`${supabaseUrl}/functions/v1/create-checkout`, {
+    const response = await fetch(`${supabaseUrl}/functions/v1/Create-checkout`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
