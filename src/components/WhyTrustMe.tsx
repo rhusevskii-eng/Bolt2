@@ -26,7 +26,7 @@ export default function WhyTrustMe() {
           <div className="w-full lg:w-[360px] flex-shrink-0">
             <div className="relative">
               <div className="absolute -inset-3 rounded-3xl blur-2xl" style={{ background: 'rgba(245,158,11,0.12)' }} />
-              <div className="relative rounded-2xl overflow-hidden border shadow-2xl" style={{ borderColor: 'rgba(245,158,11,0.25)', boxShadow: '0 25px 50px rgba(245,158,11,0.15)' }}>
+             <div className="relative rounded-2xl border shadow-2xl" style={{ borderColor: 'rgba(245,158,11,0.25)', boxShadow: '0 25px 50px rgba(245,158,11,0.15)' }}>
                 <img
                   src="/IMG_0304.jpg"
                   alt="Иво Димовски"
