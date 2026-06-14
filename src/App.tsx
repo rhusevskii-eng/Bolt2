@@ -3,6 +3,7 @@ import MediaLogos from './components/MediaLogos';
 import EventDays from './components/EventDays';
 import WhoIsItFor from './components/WhoIsItFor';
 import EventSchedule from './components/EventSchedule';
+import ScheduleCTA from './components/ScheduleCTA';
 import TruthSection from './components/TruthSection';
 import WhyTrustMe from './components/WhyTrustMe';
 import Testimonials from './components/Testimonials';
@@ -25,6 +26,7 @@ function App() {
       <EventDays />
       <WhoIsItFor />
       <EventSchedule />
+      <ScheduleCTA />
       <TruthSection />
       <WhyTrustMe />
       <Testimonials />
